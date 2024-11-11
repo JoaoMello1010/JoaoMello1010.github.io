@@ -1,0 +1,247 @@
+body {
+    font-family: 'Nourd Bold', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: black;
+    color: orange;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    font-family: 'Nourd Bold', sans-serif;
+    font-size: 4.5em; 
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.7);
+    padding: 10px 0;
+}
+
+header h3{
+    font-family: 'Nourd Bold', sans-serif;
+    font-size: 2.5em; 
+    margin: 5px 0;
+    color: orange;
+    text-shadow: 1px 1px 2px rgba(255, 165, 0, 0.7);
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-shadow: 1px 1px 3px rgba(255, 165, 0, 0.7);
+}
+
+.logo-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5);
+}
+
+.container {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Nourd Bold', sans-serif;
+    color: rgb(7, 7, 7);
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #333;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: 2px solid orange;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.btn {
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid orange;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    background: #f9f9f9;
+    color: black;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+.testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.testimonial {
+    font-style: italic;
+    margin: 10px 0;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 165, 0, 0.1);
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: orange;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    color: black;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT - Pancakes</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesBlack.css">
+    <echo "# MIT-pancakes" >> README.md 
+<git init 
+git add README.md 
+git commit -m "primeiro commit" 
+git branch -M main 
+git remote add origin https://github.com/JoaoMello1010/MIT-pancakes.git
+ git push -u origin main></git>
+</head>
+<body>
+
+<header>
+    <h1>MIT-Pancakes</h1>
+    <nav>
+        <a href="#missao">Missão</a>
+        <a href="#visao">Visão</a>
+        <a href="#valores">Valores</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<div class="logo-section">
+    <img src="logo.png" alt="Logo Nobre Sabor">
+</div>
+
+<div class="container">
+    <section id="missao">
+        <h2>Missão</h2>
+        <p>Excelência no atendimento e no produto, proporcionando a melhor experiência ao cliente de forma a surpreendê-lo e satisfazê-lo tendo a certeza de que ele retornará em breve.</p>
+    </section>
+
+    <section id="visao">
+        <h2>Visão</h2>
+        <p>Ser a melhor opção para o cliente, colaborador, fornecedor e comunidade pela qualidade de nossos serviços, produtos e relacionamentos.</p>
+    </section>
+
+    <section id="valores">
+        <h2>Valores</h2>
+        <ul>
+            <li>Foco no cliente</li>
+            <li>Atenção aos detalhes</li>
+            <li>Qualidade no serviço</li>
+            <li>Organização</li>
+            <li>Consumo consciente</li>
+            <li>Ética e respeito ao próximo</li>
+        </ul>
+    </section>
+
+    <section id="sobre">
+        <h2>Descrição da Empresa</h2>
+        <p>A empresa Nobre Sabor foi fundada em 05 de agosto de 2024, localizada na Av. Dom Antônio, 2100 - Parque Universitário, em Assis-SP, com o intuito de criar experiências marcantes a partir da combinação perfeita entre a panqueca americana doce com geleia de damasco, e creme belga, transformando o simples ato de comer panquecas em uma experiência mágica e inesquecível.</p>
+    </section>
+
+    <section id="carousel">
+        <h2>Nossos Produtos</h2>
+        <div class="carousel">
+            <img src="promopanqueca.png" alt="Panqueca 1" id="carousel-img">
+            <div class="carousel-controls">
+                <button class="btn" onclick="prevSlide()">❮</button>
+                <button class="btn" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+        <div class="call-to-action">
+            <h3>Experimente Nossas Panquecas de Damasco!</h3>
+            <button class="cta-button">Peça Agora</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="testimonial">“As panquecas de damasco são simplesmente divinas! Uma experiência que eu não consigo esquecer.” - Maria</div>
+        <div class="testimonial">“O atendimento foi excepcional, e as panquecas, uma delícia!” - João</div>
+        <div class="testimonial">“Uma verdadeira experiência mágica! Voltarei com certeza.” - Ana</div>
+    </section>
+
+    <section class="social-links">
+        <h2>Conecte-se Conosco</h2>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pancakesmit/?igsh=MWNiZzBwb2dnYThzYQ%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </section>
+
+    <section class="newsletter">
+        <h2>Inscreva-se na nossa Newsletter</h2>
+        <input type="email" placeholder="Seu Email" required>
+        <button class="cta-button">Inscrever</button>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <p>Email: contato@nobresabor.com.br</p>
+            <p>Telefone: (18) 99682-5544</p>
+            <p>Endereço: Av. Dom Antônio, 2100 - Parque Universitário, Assis-SP</p>
+        </div>
+        <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+    </section>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const images = [
+        "imgpanqueca.png",
+        "panquecaimg.png",
+        "panquecapromo.png",
+        "promopanqueca.png"
+    ];
+
+    function showSlide(index) {
+        const img = document.getElementById('carousel-img');
+        img.src = images[index];
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showSlide(currentIndex);
+    }
+</script>
+
+</body>
+</html>
